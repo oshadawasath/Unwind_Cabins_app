@@ -55,13 +55,13 @@
 }
 
 .home_left, .home_right {
-    width: 45%;
+    width: 30%;
     height: 100%;
     /* background-color: pink; */
 }
 
 .home_left {
-    width: 55%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -252,6 +252,11 @@
 
     .search-container input[type="text"] {
         width: 100%; /* Adjust for padding and icon */
+    }
+    .home_left{}
+
+    .home_sub_items{
+        margin-right: auto;
     }
    
 }

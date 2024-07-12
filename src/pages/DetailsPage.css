@@ -190,6 +190,7 @@
         }
         .details_div3{
             margin-top: 20px;
+            padding: 0;
             }
         .details_div2_right{
             width: 80%;
@@ -207,5 +208,13 @@
         }
         .details_div2{
             margin: 15px 0;
+        }
+        .social-icon{
+            font-size: 18px;
+            margin-top:0 ;
+        }.details_div3_left h5{
+            font-size: 18px;
+        }.details_div3{
+            flex-direction: column;
         }
         }

@@ -1,5 +1,5 @@
 .question_main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: rgb(244, 247, 244);
     display: flex;
@@ -10,7 +10,7 @@
 .question_second {
     width: 70%;
     height: auto; /* Adjust height as needed */
-    background-color: rgb(249, 246, 246);
+    background-color: rgb(240, 224, 224);
     margin-left: auto;
     margin-right: auto;
     display: flex;

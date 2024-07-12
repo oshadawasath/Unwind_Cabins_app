@@ -45,7 +45,10 @@ export default function HomePage() {
                 <p></p>
                 <img src={Star} alt="Avatar" className="home_star-img" />
 
-                <div className="home_sub_items">
+                
+              </div>
+
+              <div className="home_sub_items">
                   <p>Trushtpilot</p>
 
                   <div className="exper_rectangle"></div>
@@ -56,20 +59,22 @@ export default function HomePage() {
 
                   <div className="exper_rectangle"></div>
 
-                  <p>4.5 / 5</p>
+                  <p>4.5/5</p>
                 </div>
-              </div>
             </div>
           </div>
 
-          <div className="home_right"></div>
+          <div className="home_right"> adaaaf</div>
         </div>
 
         <div className="home_third_div">
+
           <div className="search-container">
             <input type="text" placeholder="Search..." />
             {/* <span className='search-icon'><TfiBook /></span> */}
           </div>
+
+
           <button>
             <MdOutlineCalendarMonth /> Check In
           </button>
