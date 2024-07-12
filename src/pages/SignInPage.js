@@ -16,7 +16,7 @@ export default function SignInPage() {
       return;
     }
 
-    fetch("http://cabinwind.com/signin", { // fake API URL
+    fetch("https://reqres.in/api/use", { // fake API URL
       method: "POST",
       headers: {
         "Content-Type": "application/json",

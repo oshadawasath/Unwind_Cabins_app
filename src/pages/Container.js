@@ -16,10 +16,10 @@ export default function Container() {
     <>
         <HomePage/>
       <DiscoverCabinsPage/>
+      <InspirationPage/>
 
       <Experience/>
       <VideoPage/>
-      <InspirationPage/>
 
       <FindAvailableCabins/>
       <QuestionPage/>
