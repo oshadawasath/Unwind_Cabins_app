@@ -48,5 +48,11 @@
     
         }
     
+        @media (max-width: 450px) {
+            .question_main {
+                height: auto;
+            }
 
+        }
 }
+
