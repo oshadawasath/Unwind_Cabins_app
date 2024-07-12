@@ -1,0 +1,133 @@
+/* SignInPage.css */
+.signIn_main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:  url('../assets/cabins_signIn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+.signIn_div {
+    height: 80%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with 50% transparency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: whitesmoke;
+    border: 6px solid whitesmoke;
+
+}
+.horizontal-line {
+    height: 3px;
+    width: 100%;
+    background-color: #ccc; /* Line color */
+    margin: 20px 0; /* Adjust margin as needed */
+  }
+.signIn_right {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.signIn_right h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    color: whitesmoke;
+
+}
+
+.signIn_right h4 {
+    margin: 20px 0;
+    color: #555;
+    font-size: 18px;
+    text-align: left;
+    margin-right: auto;
+    color: whitesmoke;
+
+}
+
+.input_container {
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+}
+
+.input_icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #888;
+}
+
+.signIn_input {
+    width: 100%;
+    padding: 9px 9px 9px 40px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.signIn_bttn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d37d14;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signIn_bttn:hover {
+    background-color: #f6a326;
+}
+
+.signIn_topic {
+    color: rgb(6, 210, 30);
+}
+
+.signIn_logo {
+    margin-right: auto;
+    font-size: 40px;
+}
+.error_message {
+    color: red;
+    font-size: 14px;
+    margin-right: auto;
+}
+@media (max-width: 768px) {
+    .signIn_div {
+        height: 70%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .signIn_div {
+        height: 70%;
+        width: 90%; }
+
+    .signIn_input {
+        width: 100%;
+    }
+}

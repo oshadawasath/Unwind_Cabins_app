@@ -1,0 +1,104 @@
+.vPage_main {
+  height: 100vh; /* Full viewport height */
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vPage_semi_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures both columns stretch vertically */
+  width: 80%;
+  height: 60vh; /* Adjusted height */
+  /* background-color: red; */
+}
+
+.vPage_left {
+  width: 45%;
+  /* background-color: blue; */
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+
+.vpage_line-1 {
+  height: 1px;
+  background: rgb(244, 232, 5);
+  width: 20%;
+}
+
+.vPage_left h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.vPage_left p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.vPage_button {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+}
+
+.vPage_button .arrow {
+  margin-left: 10px;
+}
+
+.vPage_right {
+  width: 55%;
+  /* background-color: green; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.video-player {
+  width: 100%; /* Ensure the video takes up full width */
+  height: 100%; /* Ensure the video takes up full height */
+}
+
+@media (min-width: 770px) and (max-width: 1200px) {
+  .vPage_semi_main {
+      width: 90%;
+  }
+}
+
+@media (max-width: 770px) {
+  .vPage_semi_main {
+      flex-direction: column; /* Stack elements vertically */
+      width: 100%;
+      height: auto; /* Adjust height to fit content */
+  }
+
+  .vPage_left, .vPage_right {
+      width: 100%; /* Full width for both columns */
+  }
+
+  .video-wrapper {
+      margin-top: 20px; /* Add margin between the text and video */
+  }
+}

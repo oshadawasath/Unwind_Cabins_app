@@ -1,0 +1,72 @@
+
+.exper_component {
+    background-image: url('../assets/experience.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    background-repeat: none;
+    
+}
+.exper_side_component {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center items vertically */
+    align-items: flex-start; /* Align items to the left */
+    color: white;
+    width: 40%; /* Fixed width for the side component */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add padding inside the side component */
+    top: 0;
+    right: 0;
+    padding-right: 10%;
+    float: right;
+
+}
+.exper_side_component h1{
+    font-size: 50px;
+}
+.exper_side_component p{
+    margin-top: 20px;
+}
+.exper_container{
+    display: flex; /* Use flexbox for layout */
+    align-items: center;
+}
+
+.exper_rectangle{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(13, 219, 102);
+    background-image: url('../assets/star.png'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    margin-right: 4px;
+}
+
+@media (min-width: 811px) and (max-width: 1310px) {
+    .exper_side_component h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .exper_side_component{
+        padding-right:4% ;
+    }
+}
+
+@media (max-width: 810px) {
+    .exper_side_component h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .exper_side_component {
+        width: 100%; /* Full width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center; /* Center align text */
+        align-items: center; /* Center align items vertically */
+        justify-content: center; /* Center align content vertically */
+        position: relative; /* Remove fixed positioning */
+        right: auto; /* Remove right positioning */
+        padding-right: 0; /* Remove right padding */
+    }
+
+}

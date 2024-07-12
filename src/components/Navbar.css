@@ -1,0 +1,10 @@
+.navbar_main{
+    width: 100%;
+    /* background-color: aqua; */
+    margin: 0;
+    height: 9vh;
+}
+.navbar-nav .nav-item:last-child img {
+    width: 30px; 
+    height: auto; /* Maintain aspect ratio */
+  }

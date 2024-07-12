@@ -1,0 +1,67 @@
+/* FindAvailableCabins.css */
+
+
+.findCabins_main {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 8), rgba(0, 0, 0, 0.3)), 
+    url('../assets/findAvailableCabins.jpg');
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: center; /* Vertically centers items */
+    color: white;
+    text-align: right; /* Aligns text to the right */
+}
+
+.findCabins_right_div {
+    height: 40%;
+    width: 85%;
+    /* background-color: red; */
+}
+
+.findCabins_left_div {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: flex-start; /* Align items to the left */
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(76, 0, 255); */
+    padding: 3px;
+
+}
+
+.findCabins_left_div h1 {
+    margin: 0; /* Remove default margin for heading */
+    font-family: normal;
+    font-size: 43px;
+}
+
+.findCabins_left_div p {
+    font-size: 16px;
+    margin-top: 10px; /* Add margin for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.findCabins_bttn {
+    width: 300px;
+    height: 47px;
+    border-radius: 8px;
+    background-color: rgb(255, 166, 0);
+    border: none;
+    align-self: flex-start; /* Align button to the left side */
+    margin-top: auto; /* Push button to the bottom of the div */
+}
+@media (min-width: 400px) and (max-width: 700px) {
+
+.findCabins_left_div{
+    width: 70%;
+}
+.findCabins_bttn{
+    width: 200px;
+    height: 45px;
+
+}
+}

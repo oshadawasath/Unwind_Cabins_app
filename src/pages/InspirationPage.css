@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure box model includes padding and border */
+}
+
+.inspPage_main {
+    background-color: rgb(234, 238, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text */
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.inspPage_secondMain {
+    width: 70%;
+    max-width: 1200px; /* Limit maximum width */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.inspPage_firstDiv, .inspPage_secondDiv {
+    width: 100%;
+    height: 45px;
+    padding: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}.inspPage_firstDiv  h1{
+    text-align: left;
+}
+
+.inspPage_secondDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center vertically */
+}
+
+.insPage_left_text {
+    text-align: left;
+    color: #555;
+    flex: 1;
+    font-size: 18px; /* Larger font size for main text */
+}
+
+.insPage_right_text {
+    text-align: right; /* Align text to the right */
+    color: #282929;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 18px; /* Larger font size for link */
+}
+
+.inspPage_thirdDiv {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    text-align: center;
+    padding: 20px 0; /* Adjust padding */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+@media (max-width: 1270px) {
+    .inspPage_secondMain {
+        width: 90%;
+    }
+    .inspPage_thirdDiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 920px) {
+    .inspPage_secondMain {
+        width: 100%;
+    }
+    .inspPage_thirdDiv {
+        flex-direction: column;
+        align-items: center; /* Center align items */
+    }
+    .insPage_left_text, .insPage_right_text {
+        text-align: center; /* Center align text */
+    }
+    .inspPage_main {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}

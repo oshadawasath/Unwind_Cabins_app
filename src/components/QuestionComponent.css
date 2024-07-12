@@ -1,0 +1,71 @@
+.question_com_main {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.question_com_left {
+    padding: 6px;
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(95, 95, 35); */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    flex-direction: column;
+}
+
+.question_com_right {
+    padding: 2px;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(255, 170, 0);
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    text-align: center; /* Aligns text center within the container */
+    border-radius: 8px;
+    cursor: pointer; /* Add cursor pointer for button-like behavior */
+}
+
+.question_com_right p {
+    margin-right: auto; /* Remove default margin */
+    padding: 4px;
+}
+
+.LuArrowRight {
+    margin-left: auto; /* Pushes LuArrowRight to the right */
+    padding: 4px;
+    font-size: 30px;
+}
+
+.question_head_P {
+    margin: 0;
+    font-size: 18px;
+    margin-right: auto;
+}
+
+.question_p {
+    margin: 0;
+    margin-right: auto;
+}
+
+@media (min-width: 400px) and (max-width: 920px) {
+    .question_com_main {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .question_com_left {
+        width: 100%; /* Full width for left column */
+        margin-bottom: 10px; /* Add space between stacked items */
+    }
+
+    .question_com_right {
+        width: 100%; /* Full width for right column */
+    }
+}
+
